@@ -66,5 +66,5 @@ yarn dev
 
 ## 📚 Resources
 - [Next.js](https://nextjs.org/docs)
-- [Firebase Docs] (https://firebase.google.com/docs)
-- [Tailwind CSS Docs] (https://tailwindcss.com/docs/installation/using-vite)
+- [Firebase] (https://firebase.google.com/docs)
+- [TailwindCSS] (https://tailwindcss.com/docs/installation/using-vite)
