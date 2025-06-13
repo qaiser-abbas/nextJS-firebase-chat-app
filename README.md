@@ -35,12 +35,14 @@ yarn dev
 - Enable Firestore and Authentication (Google, Email/Password, or Anonymous).
 - Go to Project Settings → General → Add a Web App.
 - Copy your Firebase config and create a .env.local file
+```
 NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-auth-domain
 NEXT_PUBLIC_FIREBASE_PROJECT_ID=your-project-id
 NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your-storage-bucket
 NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your-sender-id
 NEXT_PUBLIC_FIREBASE_APP_ID=your-app-id
+```
 
 ### 3.  Run the Project:
 ```bash
