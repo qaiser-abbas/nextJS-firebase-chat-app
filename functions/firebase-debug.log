@@ -1,0 +1,91 @@
+[debug] [2025-05-20T11:40:18.794Z] ----------------------------------------------------------------------
+[debug] [2025-05-20T11:40:18.797Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2025-05-20T11:40:18.797Z] CLI Version:   13.35.1
+[debug] [2025-05-20T11:40:18.798Z] Platform:      win32
+[debug] [2025-05-20T11:40:18.798Z] Node Version:  v18.20.6
+[debug] [2025-05-20T11:40:18.798Z] Time:          Tue May 20 2025 16:40:18 GMT+0500 (Pakistan Standard Time)
+[debug] [2025-05-20T11:40:18.799Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-20T11:40:19.386Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-20T11:40:19.387Z] > authorizing via signed-in user (shahzadhussain1731043@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2025-05-20T11:40:19.417Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-05-20T11:40:19.418Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project nextjs-pro-5a934. This may result in unexpected behavior. 
+[debug] [2025-05-20T11:40:19.435Z] [hub] writing locator at C:\Users\Shahzad\AppData\Local\Temp\hub-nextjs-pro-5a934.json
+[debug] [2025-05-20T11:40:19.497Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-05-20T11:40:19.497Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-05-20T11:40:19.497Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-05-20T11:40:19.498Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2025-05-20T11:40:19.535Z] defaultcredentials: writing to file C:\Users\Shahzad\AppData\Roaming\firebase\shahzadhussain1731043_gmail_com_application_default_credentials.json
+[debug] [2025-05-20T11:40:19.542Z] Setting GAC to C:\Users\Shahzad\AppData\Roaming\firebase\shahzadhussain1731043_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Shahzad\\AppData\\Roaming\\firebase\\shahzadhussain1731043_gmail_com_application_default_credentials.json"}}
+[debug] [2025-05-20T11:40:19.544Z] Checked if tokens are valid: true, expires at: 1747744727683
+[debug] [2025-05-20T11:40:19.544Z] Checked if tokens are valid: true, expires at: 1747744727683
+[debug] [2025-05-20T11:40:19.546Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nextjs-pro-5a934/adminSdkConfig [none]
+[debug] [2025-05-20T11:40:20.221Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nextjs-pro-5a934/adminSdkConfig 200
+[debug] [2025-05-20T11:40:20.222Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nextjs-pro-5a934/adminSdkConfig {"projectId":"nextjs-pro-5a934","storageBucket":"nextjs-pro-5a934.firebasestorage.app"}
+[info] i  functions: Watching "D:\officeData\office\pro-nextjs\my-app\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\officeData\\office\\pro-nextjs\\my-app\\functions\" for Cloud Functions..."}}
+[debug] [2025-05-20T11:40:20.326Z] Validating nodejs source
+[debug] [2025-05-20T11:40:23.801Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.7.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2025-05-20T11:40:23.802Z] Building nodejs source
+[debug] [2025-05-20T11:40:23.804Z] Failed to find version of module node: reached end of search path D:\officeData\office\pro-nextjs\my-app\functions\node_modules
+[warn] !  functions: Your requested "node" version "22" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2025-05-20T11:40:23.811Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-05-20T11:40:23.833Z] Found firebase-functions binary at 'D:\officeData\office\pro-nextjs\my-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8630
+
+[error] TypeError: functions.firestore.document is not a function
+    at Object.<anonymous> (D:\officeData\office\pro-nextjs\my-app\functions\lib\index.js:8:6)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at loadModule (D:\officeData\office\pro-nextjs\my-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (D:\officeData\office\pro-nextjs\my-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:157:23)
+    at D:\officeData\office\pro-nextjs\my-app\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js:56:56
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification. Timeout after 10000. See https://firebase.google.com/docs/functions/tips#avoid_deployment_timeouts_during_initialization' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification. Timeout after 10000. See https://firebase.google.com/docs/functions/tips#avoid_deployment_timeouts_during_initialization'"}}
+[debug] [2025-05-20T11:40:40.194Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: connect ECONNREFUSED ::1:40001. If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
